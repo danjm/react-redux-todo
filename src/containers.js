@@ -1,5 +1,5 @@
-import { connext } from 'react-redux';
-import * from components from './components';
+import { connect } from 'react-redux';
+import * as components from './components';
 import { addTodo, toggleTodo } from './actions';
 
 export const TodoList = connect(

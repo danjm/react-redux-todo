@@ -10,6 +10,6 @@ const store = createStore(reducer);
 render(
 	<Provider store={store}>
 		<TodoList />
-	</Provider,
+	</Provider>,
 	document.getElementById('app')
 );

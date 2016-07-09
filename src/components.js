@@ -2,6 +2,7 @@ import React from 'react';
 
 export function Todo(props) {
 	const { todo } = props;
+	
 	return (todo.get('isDone')
 		? <strike> { todo.get('text') } </strike>
 		: <span> { todo.get('text') } </span>
@@ -37,7 +38,7 @@ export function TodoList(props) {
 					<li key={t.get('id')}
 						className='to__item'
 						onClick={toggleClick(t.get('id'))}>
-						<Todo todo={t.toJS()} />
+						<Todo todo={t} />
 					</li>
 				))}
 			</ul>

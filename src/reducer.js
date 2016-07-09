@@ -5,7 +5,7 @@ const init = List([]);
 
 export default function(todos=init, action) {
 	return _.cond([
-		[_.matches({type: 'ADD_TODO'}), function () {
+		[_.matches({type: 'ADD_TODO'}), function (action) {
 			return todos.push(Map(action.payload));
 		}],
 		[_.matches({type: 'TOGGLE_TODO'}), function () {

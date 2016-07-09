@@ -6,7 +6,7 @@ export function addTodo(text) {
 		payload: {
 			id: _.uniqueId(),
 			isDone: false,
-			text: test
+			text: text
 		}
 	}
 }
